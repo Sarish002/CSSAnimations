@@ -1,0 +1,118 @@
+body {
+    background-color:
+        #000000;
+}
+
+html body h1 {
+    font-size: 50px;
+    font-family: Trebuchet MS;
+    font-weight: 800;
+    color: #ffffff;
+
+    animation-name: glider;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+button {
+    border: 5px solid #ffffff;
+    border-radius: 7px;
+    background-image:
+        linear-gradient(#da3068, #14469f);
+
+    font-size: 25px;
+    font-family: Trebuchet MS;
+    font-weight: 800;
+
+    margin: 35px;
+    color: #ffffff;
+    padding: 7px;
+
+    transition-property: scale;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+button:hover {
+    background-color: #ffffff;
+    background-image: none;
+    color: #8b008b;
+    scale: 1.25;
+}
+
+button:focus {
+    background-color: #ffffff;
+    background-image: none;
+    color: #8b008b;
+    scale: 1.25;
+}
+
+
+html body h2 {
+    font-family: Trebuchet MS;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    margin: 50px;
+    margin-top: 35px;
+}
+
+div {
+    position: relative;
+    width: 900px;
+    height: 180px;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #222222;
+    border: 5px solid #000000;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 53deg;
+    inherits: false;
+}
+
+div::after, div::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: 100%;
+    background-image:
+        conic-gradient(from var(--angle),  #ff0000,
+        #000000, #000000, #0000ff, #000000, #000000, #ff0000);
+    z-index: -1;
+    padding: 10px;
+    border-radius: 10px;
+
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+div::before {
+    filter: blur(30px);
+    opacity: 0.5;
+}
+
+@keyframes glider {
+    0% {  transform: translateY(0px);  }
+    50% {  transform: translateY(20px);  }
+    100% {  transform: translateY(0px);  }
+}
+
+@keyframes spin {
+    from {--angle: 53deg;}
+    to {--angle: 413deg;}
+}

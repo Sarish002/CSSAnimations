@@ -1,0 +1,159 @@
+html body {
+    background-color: #6395ee;
+}
+
+html body h1 {
+    color: #ffffff;
+    font-family: Trebuchet MS;
+    font-weight: 800;
+    font-size: 50px;
+    margin-top: 45px;
+    margin-left: 200px;
+}
+
+.AtoE {
+    border: 10px solid #ffffff;
+    border-radius: 3px;
+    background-image: linear-gradient(
+    #2eaafa, #1f2f98);
+    color: #ffffff;
+
+    font-family: Trebuchet MS;
+    font-weight: 800;
+    font-size: 50px;
+
+    transition-property: scale;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+
+    margin-left: 50px;
+}
+
+.AtoE:hover {
+    scale: 1.25;
+}
+
+.FtoJ {
+    border: 10px solid #ffffff;
+    border-radius: 3px;
+    background-image: linear-gradient(
+    #2eaafa, #1f2f98);
+    color: #ffffff;
+
+    font-family: Trebuchet MS;
+    font-weight: 800;
+    font-size: 50px;
+
+    transition-property: scale;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+
+    margin-left: 210px;
+    margin-top: 12px
+}
+
+.FtoJ:hover {
+    scale: 1.25;
+}
+
+
+.KtoO {
+    border: 10px solid #ffffff;
+    border-radius: 3px;
+    background-image: linear-gradient(
+    #2eaafa, #1f2f98);
+    color: #ffffff;
+
+    font-family: Trebuchet MS;
+    font-weight: 800;
+    font-size: 50px;
+
+    transition-property: scale;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+
+    margin-left: 380px;
+    margin-top: 24px
+}
+
+.KtoO:hover {
+    scale: 1.25;
+}
+
+.PtoT {
+    border: 10px solid #ffffff;
+    border-radius: 3px;
+    background-image: linear-gradient(
+    #2eaafa, #1f2f98);
+    color: #ffffff;
+
+    font-family: Trebuchet MS;
+    font-weight: 800;
+    font-size: 50px;
+
+    transition-property: scale;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+
+    margin-left: 550px;
+    margin-top: 36px
+}
+
+.PtoT:hover {
+    scale: 1.25;
+}
+
+.UtoZ {
+    border: 10px solid #ffffff;
+    border-radius: 3px;
+    background-image: linear-gradient(
+    #2eaafa, #1f2f98);
+    color: #ffffff;
+
+    font-family: Trebuchet MS;
+    font-weight: 800;
+    font-size: 50px;
+
+    transition-property: scale;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+
+    margin-left: 710px;
+    margin-top: 48px
+}
+
+.UtoZ:hover {
+    scale: 1.25;
+}
+
+.container {
+    border: 10px solid white;
+    border-radius: 7px;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    width: 35%;
+    height: 80%;
+}
+
+.AtoE:focus, .FtoJ:focus, .KtoO:focus, .PtoT:focus, .UtoZ:focus {
+    background-image: linear-gradient(
+    #ffffff, #ffffff);
+    color: #2eaafa;
+}
+
+#p {
+    color: #ffffff;
+    font-family: Trebuchet MS;
+    font-weight: 800;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
